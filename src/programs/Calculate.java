@@ -9,7 +9,7 @@ public class Calculate {
 
     public Calculate() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("What action do you want to perform?\n" +
+        System.out.println("What you want to do?\n" +
                 "1: add\n" +
                 "2: subtract\n" +
                 "3: multiply\n" +

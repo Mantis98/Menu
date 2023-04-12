@@ -7,14 +7,13 @@ import java.util.Scanner;
 public class Function {
 
     public void program() throws FileNotFoundException {
-        Scanner sc = new Scanner(System.in);
-        String command = toString();
+        int userSelected;
 
-        System.out.println(command);
-        switch (sc.nextInt()) {
+        System.out.println(toString());
+        userSelected = MenuData();
+        switch (userSelected) {
             case 1:
                 AddUser addUser = new AddUser();
-                System.out.println("Person added");
                 break;
             case 2:
                 Calculate calculate = new Calculate();
@@ -22,6 +21,13 @@ public class Function {
             default:
                 System.out.println("Bye");
         }
+    }
+
+    public static int MenuData() {
+        int selection;
+        Scanner sc = new Scanner(System.in);
+        selection = sc.nextInt();
+        return selection;
     }
 
 

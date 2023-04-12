@@ -27,6 +27,7 @@ public class AddUser {
         save.println(lastName);
         save.println(yearOfBirth);
         save.close();
+        System.out.println("Person added");
 
     }
 }
