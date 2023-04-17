@@ -2,12 +2,12 @@ package programs;
 
 import java.util.Scanner;
 
-public class Calculate {
+public class Calculator {
 
     int x;
     int y;
 
-    public Calculate() {
+    public Calculator() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("What you want to do?\n" +
                 "1: add\n" +
